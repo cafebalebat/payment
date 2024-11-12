@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pembayaran QRIS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="payment-container">
+        <button id="paymentButton">Bayar Dengan Menggunakan QRIS</button>
+    </div>
+
+    <div id="qrisModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Scan QRIS untuk Pembayaran</h2>
+            <img src="qris-image.jpg" alt="QRIS Payment" class="qris-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

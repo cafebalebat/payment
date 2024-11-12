@@ -3,9 +3,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-
-
-
-
+.payment-container {
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
 }

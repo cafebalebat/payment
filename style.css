@@ -22,3 +22,9 @@ button {
 button:hover {
     background: color #4caf49;
 }
+
+,modal {
+    display: none;
+    position: fixed;
+    
+}

@@ -58,7 +58,7 @@ button:hover {
     cursor: pointer;
 }
 .qris-image {
-    max-width: 20%px;
+    max-width: 100%px;
     height: auto;
     margin-top: 10px;
 }    

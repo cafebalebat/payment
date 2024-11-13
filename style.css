@@ -52,4 +52,7 @@ button:hover {
     cursor: pointer;
 }
 .close:hover,
-.close:focus {}    
+.close:focus {
+    color :black;
+    
+}    

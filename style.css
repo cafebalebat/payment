@@ -50,7 +50,6 @@ button:hover {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-
-
-    
-}    
+}
+.close:hover,
+.close:focus {}    

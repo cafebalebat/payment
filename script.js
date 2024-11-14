@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var modal= document.getElementById("qrismodal");
-    const btn = document.getElementById("paymentButton");
+    var btn = document.getElementById("paymentButton");
     const span = document.getElementsByClassName("close")[0];
 
     btn.onclick = function(){

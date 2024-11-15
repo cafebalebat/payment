@@ -69,4 +69,28 @@ button:hover {
     max-width: 100%px;
     height: auto;
     margin-top: 10px;
-}    
+} 
+
+button {
+    font-size: 14px; 
+    padding: 8px 16px; 
+}
+
+.modal-content {
+    width: 90%;
+}
+
+.close {
+    font-size: 40px;
+}
+}
+
+@media (max-width: 480px) {
+body {
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+button {
+    width: 100%;
+    }

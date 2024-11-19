@@ -1,21 +1,21 @@
+// Dapatkan elemen tombol dan pop-up
+const payButton = document.getElementById("payButton");
+const popup = document.getElementById("popup");
+const closePopup = document.getElementById("closePopup");
 
-var modal = document.getElementById("qrisModal");
-var btn = document.getElementById("paymentButton");
-var span = document.getElementsByClassName("close")[0];
+// Fungsi untuk membuka pop-up
+payButton.addEventListener("click", () => {
+    popup.classList.remove("hidden");
+});
 
+// Fungsi untuk menutup pop-up
+closePopup.addEventListener("click", () => {
+    popup.classList.add("hidden");
+});
 
-btn.onclick = function() {
-    modal.style.display = "flex";
-}
-
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+// Tutup pop-up jika area luar di-klik
+window.addEventListener("click", (event) => {
+    if (event.target === popup) {
+        popup.classList.add("hidden");
+    }
+});

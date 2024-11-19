@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pembayaran Via QRIS</title>
+    <title>Sistem Pembayaran QRIS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="payment-container">
-        <button id="paymentButton">Bayar Dengan Menggunakan Qris</button>
+    <div class="container">
+        <h1>Sistem Pembayaran QRIS</h1>
+        <p>Silakan klik tombol di bawah untuk membayar menggunakan QRIS.</p>
+        <button id="payButton">Bayar Sekarang</button>
     </div>
 
-    <div id="qrisModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Scan QRIS untuk Melakukan Pembayaran</h2>
-            <img src="qris 1 .jpg" alt="QRIS Payment" class="qris-image">
+    <!-- Pop-up QR Code -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Scan QRIS Anda</h2>
+            <img src="qris 1 .jpg" alt="QR Code" class="qr-code">
+            <p>Scan QRIS ini untuk melanjutkan pembayaran.</p>
         </div>
     </div>
 
